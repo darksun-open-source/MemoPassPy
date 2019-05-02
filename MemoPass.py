@@ -10,9 +10,9 @@ def load_words():
 if __name__ == '__main__':
     words = list(load_words())
     characters = '/@!$%*&()_-=[]{},.<>;:?'
-    count_words = 2
-    count_simbols = 4
-    password_length = 18
+    count_words = 3
+    count_simbols = 5
+    password_length = 32
     random_words = list()
     random_chars = list()
     continueLoop = True
@@ -20,12 +20,12 @@ if __name__ == '__main__':
     while continueLoop:
         for z in range(count_words):
             random_words.append(str(secrets.choice(words)))
-        if len(''.join(random_words)) < password_length - count_simbols:
+        if len(''.join(random_words)) == password_length - count_simbols:
             continueLoop = False
         else:
             random_words.clear()
     
-    for x in range(16 - len(''.join(random_words))):
+    for x in range(password_length - len(''.join(random_words))):
         random_chars.append(secrets.choice(characters))
 
     final_list = random_chars + random_words
