@@ -1,4 +1,5 @@
-# MemoPassPy
+# MemoPassPy 
+[![CodeFactor](https://www.codefactor.io/repository/github/darksun-open-source/memopasspy/badge)](https://www.codefactor.io/repository/github/darksun-open-source/memopasspy)
 
 This script allows you to generate easy-to-remember passwords.
 
